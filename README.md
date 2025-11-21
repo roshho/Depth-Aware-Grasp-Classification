@@ -4,6 +4,12 @@
 
 <p align="center"><strong>Depth-aware multimodal grasp classification via RGB-D feature fusion and learned depth priors.</strong></p>
 
+### Visual Overview
+<div align="center">
+  <img src="final_project/images/grasp-example.jpeg" alt="End-to-end grasp recognition: object RGB + inferred depth → dual feature extraction → (optional) latent fusion → grasp class output" width="480"/>
+  <p><em>Pipeline summary: appearance and inferred geometry are processed separately (for fusion) or jointly (RGB/RGBD) to predict one of five grasp types.</em></p>
+</div>
+
 ---
 
 ## Table of Contents
@@ -67,12 +73,6 @@ Accurately inferring the correct human grasp for a given object is critical in a
 5. Training (CNNs): 100 epochs, batch size 64, Adam (lr=1e-3, β1=0.9, β2=0.999), cross-entropy.
 6. Training (ViT baselines): 10 epochs, batch size 32, Adam (lr=1e-3, weight decay 0.05).
 
-### System Illustration
-<div align="center">
-  <img src="final_project/images/grasp-example.jpeg" alt="Grasp recognition pipeline illustration" width="420"/>
-  <p><em>Object visual and inferred depth → feature extraction → (optional) depth encoding → fusion → grasp classification.</em></p>
-</div>
-
 ---
 
 ## Results & Analysis
@@ -121,9 +121,6 @@ Accurately inferring the correct human grasp for a given object is critical in a
 **Authors:** Vishesh P Arora, Rosh Ho  
 **Depth Generation:** Monocular model “Depth Anything” (CVPR 2024)  
 **PDF:** See `final_project/Exoglove-grasp-capturing-ML.pdf`
-
-### Paper Preview (First Pages)
-<em>(Add preview images here if desired.)</em>
 
 ---
 
